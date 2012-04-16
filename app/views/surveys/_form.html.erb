@@ -6,11 +6,11 @@
   </p>
 
   <%= f.fields_for :questions do |builder| %>
-    <p>
+    <p class="questions">
       <%= builder.label :content, "Question" %><br>
       <%= builder.text_area :content, :rows => 3 %>
-      <%= builder.check_box :_destroy %>
-      <%= builder.label :_destroy, "Remove Question" %>
+      <%= builder.hidden_field :_destroy %>
+      <%= link_to_function "Remove Question", "remove_questions(this)" %>
     </p>
   <% end %>
 

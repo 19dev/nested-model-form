@@ -12,4 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+function remove_questions(link) {
+	$(link).previous("input[type=hidden]").value = "1";
+	$(link).up(".questions").hide();
+}
