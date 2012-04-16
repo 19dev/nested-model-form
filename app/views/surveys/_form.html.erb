@@ -4,5 +4,15 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </p>
+
+  <%= f.fields_for :questions do |builder| %>
+    <p>
+      <%= builder.label :content, "Question" %><br>
+      <%= builder.text_area :content, :rows => 3 %>
+      <%= builder.check_box :_destroy %>
+      <%= builder.label :_destroy, "Remove Question" %>
+    </p>
+  <% end %>
+
   <p><%= f.submit %></p>
 <% end %>
