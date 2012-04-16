@@ -52,8 +52,12 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    metaclass (0.0.1)
     mime-types (1.18)
+    mocha (0.10.5)
+      metaclass (~> 0.0.1)
     multi_json (1.2.0)
+    nifty-generators (0.4.6)
     pg (0.12.2)
     polyglot (0.3.3)
     rack (1.4.1)
@@ -110,6 +114,8 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   execjs
   jquery-rails
+  mocha
+  nifty-generators
   pg (= 0.12.2)
   rails (= 3.2.3)
   sass-rails (~> 3.2.3)

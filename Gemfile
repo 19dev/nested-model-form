@@ -13,7 +13,10 @@ end
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'nifty-generators'
 end
 group :production do
   gem 'pg', '0.12.2'
 end
+
+gem "mocha", :group => :test
